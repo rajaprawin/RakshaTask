@@ -1,0 +1,238 @@
+.RDashboardPage {
+  background-color: rgba(132, 142, 255, 0.619);
+  height: 100%;
+  padding: 10px;
+  color: Gray;
+  border-radius: 10px;
+}
+
+.dashHeader {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5); /* Smoky white shadow */
+  border-radius: 25px;
+  padding: 10px;
+  padding-top: 15px;
+  flex-wrap: wrap;
+  background-color: white;
+  /* margin-left: 20px;
+  margin-right: 10px; */
+}
+@media (min-width: 700px) {
+  .dashHeader {
+    margin-left: 25px;
+    margin-right: 10px;
+  }
+}
+.teamAtHeader {
+  color: white;
+  font-weight: bold;
+  border: 1px solid green;
+  background-color: green;
+  border-radius: 20px;
+  padding: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: 5px;
+}
+.selectionData {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+/* ______________________________________ */
+@media (max-width: 700px) {
+  .selectionData {
+    width: 100%;
+  }
+  .myCard {
+    min-width: 400px;
+    width: 100%;
+   
+  }
+  .dashHeader h3 {
+    font-size: 14px;
+  }
+
+  .cardCol2 {
+    /* background-color: green; */
+    width: 100% !important;
+    margin-top: 15px;
+  }
+}
+/* ____ */
+.cardCol2Inner {
+  background-color: white;
+  min-height: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+@media (min-width: 700px) {
+  .cardCol1 {
+    width: 70%;
+  }
+  .cardCol2 {
+    width: 30%;
+    padding: 15px;
+    /* background-color: white; */
+  }
+}
+@media (max-width: 700px) {
+
+.col2Cards{
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+}
+
+.col2Cards {
+  /* min-height: 100px; */
+  display: flex;
+  border-radius: 10px;
+  
+  &:hover{
+    border: 4px solid blue;
+        }
+}
+.rSmiley {
+  width: 30%;
+  text-align: center;
+  margin: 15px;
+}
+.rPercentage {
+  width: 70%;
+  text-align: center;
+  margin: 15px;
+}
+/* ______________________________________ */
+.meterAndPercentContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cardsContainerRow1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.myCard {
+  min-width: 280px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.89);
+  border-radius: 20px;
+  box-shadow: 3px 4px 8px rgba(255, 255, 255, 0.5); /* Smoky white shadow */
+  padding: 10px;
+ 
+ &:hover{
+  border: 4px solid blue;
+      }
+
+}
+
+.prodDetails {
+  color: blue;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+}
+.percentageContainer {
+  min-width: 30%;
+
+  margin-right: 10px;
+  margin-top: 10px;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+  padding: 10px;
+}
+
+/*______________ graphChartContainer ________________ */
+
+.graphChartContainer {
+  background-color: white;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.rChart1 {
+  &:hover{
+    border: 4px solid rgb(146, 146, 235);
+    border-radius: 15px;
+        }
+}
+
+
+.zoomEft{
+  transition: transform 0.8s ease;
+  &:hover{
+    /* transform: translate(2px, -2px); */
+  transform: scale(1.025);
+}
+}
+
+
+
+.navBtn{
+  position: fixed;
+  right: 10px;
+  top: 90px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5); /* Smoky white shadow */
+  background-color: rgb(188, 247, 230);
+  padding: 5px;
+  cursor: pointer;
+  color: white !important;
+  font-size: 14px;
+  font-weight: bold;
+  transition: transform 0.6s ease;
+  &:hover{
+    /* transform: translate(2px, -2px); */
+  transform: scale(1.1);
+
+  }
+}
+.navBtn2{
+  position: fixed;
+  right: 10px;
+  top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5); /* Smoky white shadow */
+  background-color: rgb(81, 22, 243);
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: transform 0.6s ease;
+  &:hover{
+    /* transform: translate(2px, -2px); */
+  transform: scale(1.1);
+
+  }
+}
+
+.rads{
+background-color: rgb(81, 118, 255);
+margin-top: 2px;
+margin-bottom: 2px;
+padding: 3px;
+border-radius: 10px;
+color: white !important;
+font-weight: bold;
+}
+
+/* ________ button border animation_______ */
+
+

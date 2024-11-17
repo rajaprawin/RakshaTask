@@ -1,0 +1,31 @@
+.formInput {
+  height: 40px;
+  font-size: 16px;
+  border-radius: 25px;
+  width: 100%;
+  padding: 25px;
+  padding-right: 40px; /* Make room for the icon on the right */
+  border: 1px solid gray;
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow effect */
+  &:focus {
+    border: 2px solid rgb(24, 121, 248);
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); /* Blue shadow effect */
+  }
+}
+
+.pwd_Container {
+  position: relative;
+  width: 100%;
+}
+
+.toggle-password {
+  position: absolute;
+  padding-top: 13px;
+  right: 20px;
+  font-size: 25px;
+  cursor: pointer;
+  /* background-color: yellow; */
+  height: 100%;
+  /* color: blue; */
+}

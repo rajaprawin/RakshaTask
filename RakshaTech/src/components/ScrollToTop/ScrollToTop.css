@@ -1,0 +1,21 @@
+.scrolltoTopContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  /* scroll-behavior: smooth;  */
+}
+
+.scrolltoTopContainer:hover {
+  cursor: pointer;
+}
+html {
+  scroll-behavior: smooth;
+}
+.gototopArrow {
+  font-weight: bold;
+}
+

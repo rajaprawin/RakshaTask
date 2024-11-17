@@ -1,0 +1,101 @@
+/* Container for the speedometer */
+.speedometer-Wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.speedometer-ParentContainer{
+  width: 203px;
+  height: 130px;
+  transform: scale(1.0);
+  
+}
+
+.speedometer-OuterContainer{
+/* border: 2px solid black; */
+width: 203px;
+height: 100px;
+overflow: hidden;
+}
+
+.speedometer-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    rotate: 270deg;
+  }
+  
+  /* Creating the ring for the speedometer */
+  .speedometer-ring {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    border: 20px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* The needle of the speedometer */
+  
+  /* .speedometer-needle {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 5px;
+    background-color: steelblue;
+    transform-origin: 50% 100%;
+  } */
+  .speedometer-needle {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 5px solid white; /** width of the needle */
+    border-right: 5px solid white; /** width of the needle */
+    /** height of the needle */
+
+    /* border-bottom: 80px solid red; */
+    border-bottom-width: 80px;
+    border-bottom-style: solid;
+    /* border-bottom-color: red; */
+    
+    z-index: -1;
+
+
+
+
+    
+    width: 0; /* Set width to 0 for a triangular shape */
+    /* Adjust the height as needed */
+    background-color: transparent; /* No background color, since we're using borders */
+    transform-origin: 50% 100%; /* Pivot point for rotation */
+    transform: rotate(0deg); /* Adjust rotation as needed */
+
+  
+}
+  
+  /* Displaying the value at the center of the speedometer */
+  .speedometer-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .speedoMeter_tags{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  .sdf{
+   color: #f7c477;
+  }

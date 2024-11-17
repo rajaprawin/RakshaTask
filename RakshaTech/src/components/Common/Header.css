@@ -1,0 +1,181 @@
+/* Basic reset */
+* {
+  /* margin: 0; */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+.header {
+  /* font-family: "Times New Roman", Times, serif ; */
+  font-family: Helvetica;
+  /* font-family: Verdana; */
+  /* font-family: Tahoma; */
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* font-family: 'Courier New', Courier, monospace; */
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  background-color: #78d1a3aa;
+  color: #070303;
+  padding: 10px 20px;
+  position: relative;
+  z-index: 100;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 35px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+}
+
+/* Navigation menu styles */
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-menu li {
+  margin-left: 20px;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.nav-menu a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  /* font-weight: bold; */
+}
+
+.nav-menu {
+  color: blue;
+}
+
+/* _______ Underline Animation _____________ */
+.nave_ListItem > * {
+ 
+  text-transform: uppercase;
+  padding: 5px 10px;
+  position: relative;
+}
+.nave_ListItem > *:after {    
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: rgb(0, 51, 255);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nave_ListItem > *:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+/* _______ Underline Animation  End_____________ */
+
+
+
+
+
+
+
+
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 4px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.3s ease;
+}
+.closeHamburger {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #87e2d3;
+    flex-direction: column;
+    display: none;
+    border-radius: 25px;
+  }
+
+  .nav-menu.mobileOpen {
+    display: flex;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-menu li {
+    width: auto;
+    text-align: left;
+    padding: 10px 0;
+    margin: 0px 10px;
+    border-top: 1px solid #e25252;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+.logoLink {
+  color: White;
+  text-decoration: none;
+}
+
+/* ______________________________________ */
+.rotate-infinite  {
+ animation: rotateInfinite 2s linear infinite; /* Triggers animation on hover */
+  color: blue;
+  
+}
+
+.rotate-infinite:hover {
+}
+
+@keyframes rotateInfinite {
+  from {
+    transform: rotate(0deg); /* Start at 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* Complete one rotation */
+  }
+}
+/* ______________________________________ */

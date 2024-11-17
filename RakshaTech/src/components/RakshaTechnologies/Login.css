@@ -1,0 +1,59 @@
+.loginContainer {
+  background-image: linear-gradient(
+    90deg,
+    rgb(90, 115, 255),
+    rgba(178, 90, 255, 0.948)
+  );
+  display: flex;
+  justify-content: center; /* Horizontally centers the content */
+  align-items: center; /* Vertically centers the content */
+  height: 100vh;
+}
+.loginInnerContainer {
+  width: 350px;
+  background-color: white;
+  padding: 20px; /* Optional padding for inner spacing */
+  text-align: center;
+  border-radius: 15px;
+}
+
+.RloginInput {
+  height: 40px;
+  font-size: 16px;
+  width: 100%;
+  padding: 25px;
+  border: none;
+  padding-right: 40px; /* Make room for the icon on the right */
+  border-bottom: 1px solid gray;
+  transition: box-shadow 0.3s ease; /* Smooth transition for shadow effect */
+  outline: none;
+  margin-top: 25px;
+  &:focus {
+    border-bottom: 2px solid rgb(24, 121, 248);
+  }
+}
+
+.loginButton {
+  background-image: linear-gradient(
+   270deg,
+    rgb(90, 115, 255),
+    rgba(178, 90, 255, 0.948)
+  );
+  margin-top: 40px;
+  width: 100%;
+  height: 40px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.subText{
+    /* font-weight: bold; */
+}
+.ahilight {
+  color: rgb(144, 144, 155);
+}
+.bhilight {
+  color: rgb(56, 95, 210);
+  cursor: pointer;
+}
