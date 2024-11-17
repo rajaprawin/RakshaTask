@@ -54,10 +54,10 @@ const Header = () => {
                   <a href="/">Home</a>
                 </li>
                 <li>
-                  <a href="/Rchart">Chart</a>
+                  <a href="/RDashboard">Dashboard</a>
                 </li>
                 <li>
-                  <a href="/RDashboard">Dashboard</a>
+                  <a href="/Rchart">Chart</a>
                 </li>
 
                 <li>
