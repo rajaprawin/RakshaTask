@@ -1,0 +1,55 @@
+
+.dropdownRR {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdownRR .dropbtnRR {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+.dropdownRR-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  height: 80vh;
+  overflow: scroll;
+}
+
+.dropdownRR-content a {
+  float: right;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  /* display: block; */
+  text-align: left;
+  font-size: 12px;
+  width: auto;
+  
+}
+
+.dropdownRR-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdownRR:hover .dropdownRR-content {
+  display: block;
+}
+
+.flipkartMobileSideFilterBarView{
+  position: static;
+  top: 0;
+  left: 0;
+
+}
